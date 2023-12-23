@@ -9,7 +9,6 @@ This repository contains the backend implementation for managing bookings in a r
 2. Set up your `.env` file with the `DATABASE_URL`.
 3. Start the server: `npm start`
 
-
 ## Endpoints
 
 ### Base URL: `http://*url*/api/booking`
@@ -87,3 +86,25 @@ This repository contains the backend implementation for managing bookings in a r
 - **Description**: Deletes a specific booking by ID.
 - **Request**: Requires the ID of the booking in the URL.
 - **Response**: Returns a success message upon successful deletion.
+
+## Deploying the Project
+
+### Backend Deployment (Heroku)
+
+1. Install the Heroku CLI by following the instructions on the [Heroku CLI documentation](https://devcenter.heroku.com/articles/heroku-cli).
+2. Log in to your Heroku account using the command `heroku login`.
+3. Create a new Heroku app using the command `heroku create`.
+4. Set the `DATABASE_URL` environment variable on Heroku using the command `heroku config:set DATABASE_URL=<your-database-url>`.
+5. Deploy the backend to Heroku using the command `git push heroku main`.
+6. Open the deployed app in your browser using the command `heroku open`.
+https://aura-interview-cf96c948839b.herokuapp.com/
+
+### Frontend Deployment (Vercel)
+
+1. Install the Vercel CLI by following the instructions on the [Vercel CLI documentation](https://vercel.com/docs/cli).
+2. Log in to your Vercel account using the command `vercel login`.
+3. Navigate to the client directory using the command `cd client`.
+4. Deploy the frontend to Vercel using the command `vercel`.
+5. Follow the prompts to configure your deployment settings.
+6. Open the deployed app in your browser using the URL provided by Vercel.
+https://aura-client-5il23s0vj-thuynts-projects.vercel.app/
