@@ -35,8 +35,8 @@ function Home() {
           />
         ))}
       </Carousel>
-      <div className="flex mt-5">
-        <div className="w-3/4 pr-4">
+      <div className="md:flex mt-5">
+        <div className="md:w-3/4 ml-4 md:ml-0 pr-4">
           <div className="bg-white dark:bg-gray-900 rounded pb-5">
             <InformationArticle
               restaurantName="MK Kitchen & Bar - Bến Vân Đồn"
@@ -73,7 +73,7 @@ function Home() {
             <MenuArticle images={menu} />
           </div>
         </div>
-        <div className="w-1/4 pl-4 bg-white dark:bg-gray-900">
+        <div className="md:w-1/4 bg-white dark:bg-gray-900 rounded" >
           <div className="bg-white dark:bg-gray-900 rounded">
             <BookingForm />
           </div>

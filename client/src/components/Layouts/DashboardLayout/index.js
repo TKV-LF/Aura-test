@@ -22,9 +22,9 @@ function DashboardLayout({ children }) {
     setIsDarkMode(!isDarkMode);
   };
   return (
-    <div className="wrapper bg-[#eee] dark:bg-slate-800 ">
+    <div className="wrapper">
       <Leftbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-      <div className="absolute left-64 overflow-x-auto container mx-auto h-full ">
+      <div className="md:absolute md:left-64 overflow-x-auto container mx-auto h-full  bg-[#eee] dark:bg-gray-800">
         <div className="content">{children}</div>
       </div>
     </div>

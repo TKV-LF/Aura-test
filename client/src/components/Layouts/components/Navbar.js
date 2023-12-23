@@ -49,7 +49,7 @@ export default function Navbar(props) {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "dark:bg-gray-900 dark:text-white bg-gray-100 text-slate-900"
+                            ? "dark:bg-gray-800 dark:text-white bg-gray-200 text-slate-900"
                             : "text-gray-900 hover:bg-gray-100 hover:text-slate-500 dark:hover:bg-gray-700 dark:text-white dark:hover:text-white",
                           "rounded-md px-3 py-2 text-sm font-medium"
                         )}
@@ -179,7 +179,7 @@ export default function Navbar(props) {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "dark:bg-gray-900 dark:text-white bg-gray-100 text-slate-900"
+                      ? "dark:bg-gray-800 dark:text-white bg-gray-200 text-slate-900"
                       : "text-gray-900 hover:bg-gray-100 hover:text-slate-500 dark:hover:bg-gray-700 dark:text-white dark:hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
