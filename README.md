@@ -35,7 +35,10 @@ To run this project, you need to set the following environment variable in your 
         "email": "johndoe@mail.com",
         "phone": "09231727272",
         "note": "Some note",
-        "bookingTime": "2023-12-25T18:00:00Z"
+        "adults": "1",
+        "kids": "0",
+        "bookingDate": "2023-12-25",
+        "bookingTime": "12:20"
         // Other booking details
     }
     ```
