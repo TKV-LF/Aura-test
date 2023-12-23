@@ -3,13 +3,6 @@
 ## Backend
 This repository contains the backend implementation for managing bookings in a restaurant. The backend is developed using Express.js and MongoDB to provide a RESTful API.
 
-
-## Environment Variables
-
-To run this project, you need to set the following environment variable in your `.env` file:
-
-- `DATABASE_URL`: mongodb+srv://thuongkhung68:thuongkhung120@cluster0.zlcs6
-
 ## Running the Project
 
 1. Install dependencies: `npm install`
