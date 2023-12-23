@@ -8,9 +8,19 @@ import {
 } from "../../components/Articles";
 
 const slides = [
-  "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
-  "https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png",
+  "https://pasgo.vn/Upload/anh-chi-tiet/nha-hang-mk-kitchen-bar-ben-van-don-6-normal-2253770456511.webp",
+  "https://pasgo.vn/Upload/anh-chi-tiet/nha-hang-mk-kitchen-bar-ben-van-don-9-normal-2253770756514.webp",
+  "https://pasgo.vn/Upload/anh-chi-tiet/nha-hang-mk-kitchen-bar-ben-van-don-1-normal-2253769856506.webp",
+  "https://pasgo.vn/Upload/anh-chi-tiet/nha-hang-mk-kitchen-bar-ben-van-don-2-normal-2253769956507.webp",
+  "https://pasgo.vn/Upload/anh-chi-tiet/nha-hang-mk-kitchen-bar-ben-van-don-4-normal-2253770256509.webp",
+];
+
+const menu = [
+  "https://cdn.pastaxi-manager.onepas.vn/Content/Uploads/Prices/vuvu/mkkitchenbar/menu/nha-hang-mk-kitchen-bar-ben-van-don-1.jpg",
+  "https://cdn.pastaxi-manager.onepas.vn/Content/Uploads/Prices/vuvu/mkkitchenbar/menu/nha-hang-mk-kitchen-bar-ben-van-don-2.jpg",
+  "https://cdn.pastaxi-manager.onepas.vn/Content/Uploads/Prices/vuvu/mkkitchenbar/menu/nha-hang-mk-kitchen-bar-ben-van-don-3.jpg",
+  "https://cdn.pastaxi-manager.onepas.vn/Content/Uploads/Prices/vuvu/mkkitchenbar/menu/nha-hang-mk-kitchen-bar-ben-van-don-4.jpg",
+  "https://cdn.pastaxi-manager.onepas.vn/Content/Uploads/Prices/vuvu/mkkitchenbar/menu/nha-hang-mk-kitchen-bar-ben-van-don-5.jpg",
 ];
 
 function Home() {
@@ -27,7 +37,7 @@ function Home() {
       </Carousel>
       <div className="flex mt-5">
         <div className="w-3/4 pr-4">
-          <div className="bg-white dark:bg-gray-800 rounded pb-5">
+          <div className="bg-white dark:bg-gray-900 rounded pb-5">
             <InformationArticle
               restaurantName="MK Kitchen & Bar - Bến Vân Đồn"
               address="Số 320 Bến Vân Đồn, P. 2, Q. 4"
@@ -39,7 +49,7 @@ function Home() {
             />
           </div>
 
-          <div className="bg-white dark:bg-gray-800 rounded mt-5 pb-5">
+          <div className="bg-white dark:bg-gray-900 rounded mt-5 pb-5">
             <UtilitiesArticle
               utilities={[
                 "Máy chiếu",
@@ -59,14 +69,12 @@ function Home() {
             />
           </div>
 
-          <div className="bg-white dark:bg-gray-800 rounded mt-5 pb-5">
-            <MenuArticle
-              images={slides}
-            />
+          <div className="bg-white dark:bg-gray-900 rounded mt-5 pb-5">
+            <MenuArticle images={menu} />
           </div>
         </div>
-        <div className="w-1/4 pl-4 bg-white dark:bg-gray-800">
-          <div className="bg-white dark:bg-gray-800 rounded">
+        <div className="w-1/4 pl-4 bg-white dark:bg-gray-900">
+          <div className="bg-white dark:bg-gray-900 rounded">
             <BookingForm />
           </div>
         </div>

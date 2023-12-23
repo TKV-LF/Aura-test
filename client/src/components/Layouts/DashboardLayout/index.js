@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "../components/Navbar";
+import Leftbar from "../components/LeftBar";
 
-function DefaultLayout({ children }) {
+function DashboardLayout({ children }) {
   const [isDarkMode, setIsDarkMode] = useState(
     localStorage.getItem("color-theme") === "dark" ||
       (!("color-theme" in localStorage) &&
@@ -22,13 +22,13 @@ function DefaultLayout({ children }) {
     setIsDarkMode(!isDarkMode);
   };
   return (
-    <div className="wrapper bg-[#eee] dark:bg-gray-800">
-      <Navbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-      <div className="container mx-auto py-1 ">
+    <div className="wrapper bg-[#eee] dark:bg-slate-800 ">
+      <Leftbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
+      <div className="absolute left-64 overflow-x-auto container mx-auto h-full ">
         <div className="content">{children}</div>
       </div>
     </div>
   );
 }
 
-export default DefaultLayout;
+export default DashboardLayout;

@@ -16,7 +16,7 @@ function classNames(...classes) {
 
 export default function Navbar(props) {
   return (
-    <Disclosure as="nav" className="bg-white dark:bg-gray-800">
+    <Disclosure as="nav" className="bg-white dark:bg-gray-900">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -121,7 +121,7 @@ export default function Navbar(props) {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="booking"
+                            href="dashboard"
                             className={classNames(
                               active
                                 ? "dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
