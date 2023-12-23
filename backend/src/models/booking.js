@@ -18,6 +18,18 @@ const dataSchema = new mongoose.Schema({
     required: true,
     type: Number,
   },
+  adults: {
+    required: true,
+    type: Number,
+  },
+  kids: {
+    required: true,
+    type: Number,
+  },
+  bookingDate: {
+    required: true,
+    type: String,
+  },
   bookingTime: {
     required: true,
     type: String,
